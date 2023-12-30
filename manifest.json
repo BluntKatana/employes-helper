@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Employes Helper",
+    "description": "Adds data to the Employes time registration page",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": ["https://app.employes.nl/employee/*/time-registration"],
+            "run_at": "document_end"
+        }
+    ]
+  }
